@@ -1,0 +1,9 @@
+{
+	"command": "show ip bgp summary",
+	"rules":[
+		{
+			"regexp": "(\\d*)\\n\\nTotal",
+			"result": "10"
+		}
+	]
+}

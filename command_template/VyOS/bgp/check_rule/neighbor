@@ -1,0 +1,10 @@
+{
+	"command": "show ip bgp neighbors {{ neighbor_ip }}",
+	"rules":[
+		{
+			"regexp": "BGP state = (\\S*),",
+			"result": "Established"
+		}
+	]
+}
+
