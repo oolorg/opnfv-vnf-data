@@ -1,0 +1,6 @@
+BGP:
+  - summary
+  - neighbor
+  - advertised-routes
+  - received-routes
+  - routes

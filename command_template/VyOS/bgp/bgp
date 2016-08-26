@@ -1,8 +1,5 @@
-#!/bin/vbash
-source /opt/vyatta/etc/functions/script-template
-
 configure
-set protocols static route {{have_addr}} blackhole distance 1
+set protocols static route {{have_addr1}} blackhole distance 1
 set protocols static route {{have_addr2}} blackhole distance 1
 set protocols static route {{have_addr3}} blackhole distance 1
 set protocols static route {{have_addr4}} blackhole distance 1
@@ -18,7 +15,7 @@ set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} remote-as {{ peer
 set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} update-source {{ipv4_origin}}
 set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} soft-reconfiguration inbound
 set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} password lab0033
-set protocols bgp {{ origin_as }} network {{have_addr}}
+set protocols bgp {{ origin_as }} network {{have_addr1}}
 set protocols bgp {{ origin_as }} network {{have_addr2}}
 set protocols bgp {{ origin_as }} network {{have_addr3}}
 set protocols bgp {{ origin_as }} network {{have_addr4}}

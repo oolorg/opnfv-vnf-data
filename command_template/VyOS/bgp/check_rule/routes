@@ -1,5 +1,5 @@
 {
-	"command": "show ip bgp neighbors {{ neighbor_ip }} routes",
+	"command": "show ip bgp neighbors 192.168.220.3 routes | no-more",
 	"rules":[
 		{
 			"regexp": "Total number of prefixes (\\d*)",

@@ -1,8 +1,8 @@
 {
-	"command": "show ip bgp summary",
+	"command": "show ip bgp summary | no-more",
 	"rules":[
 		{
-			"regexp": "(\\d*)\\n\\nTotal",
+			"regexp": "(\\d*)\\r\\n\\r\\nTotal",
 			"result": "10"
 		}
 	]

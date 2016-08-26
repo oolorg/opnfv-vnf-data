@@ -1,0 +1,12 @@
+have_addr1: 10.1.1.0/24
+have_addr2: 10.1.2.0/24
+have_addr3: 10.1.3.0/24
+have_addr4: 10.1.4.0/24
+have_addr5: 10.1.5.0/24
+have_addr6: 10.1.6.0/24
+have_addr7: 10.1.7.0/24
+have_addr8: 10.1.8.0/24
+have_addr9: 10.1.9.0/24
+have_addr10: 10.1.10.0/24
+origin_as: 65002
+peer_as: 65001

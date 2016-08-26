@@ -1,5 +1,5 @@
 {
-	"command": "show ip bgp neighbors {{ neighbor_ip }}",
+	"command": "show ip bgp neighbors 192.168.220.3 | no-more",
 	"rules":[
 		{
 			"regexp": "BGP state = (\\S*),",
