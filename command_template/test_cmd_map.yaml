@@ -1,4 +1,4 @@
-vyos-1.1.7.img:
+vyos1.1.7:
     BGP:
         summary: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
         neighbor: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor

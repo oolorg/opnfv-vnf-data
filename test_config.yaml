@@ -1,3 +1,4 @@
+test: BGP
 BGP:
   - summary
   - neighbor
