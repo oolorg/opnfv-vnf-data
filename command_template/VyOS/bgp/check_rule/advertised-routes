@@ -2,6 +2,7 @@
 	"command": "show ip bgp neighbors {{ neighbor_ip }} advertised-routes | no-more",
 	"rules":[
 		{
+                        "description": "Check route advertise",
 			"regexp": "Total number of prefixes (\\d*)",
 			"result": "10"
 		}

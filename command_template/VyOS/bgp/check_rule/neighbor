@@ -2,6 +2,7 @@
 	"command": "show ip bgp neighbors {{ neighbor_ip }} | no-more",
 	"rules":[
 		{
+                        "description": "Check bgp status",
 			"regexp": "BGP state = (\\S*),",
 			"result": "Established"
 		}

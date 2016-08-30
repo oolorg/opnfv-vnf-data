@@ -2,6 +2,7 @@
 	"command": "show ip bgp summary | no-more",
 	"rules":[
 		{
+                        "description": "Check bgp peer",
 			"regexp": "(\\d*)\\r\\n\\r\\nTotal",
 			"result": "10"
 		}

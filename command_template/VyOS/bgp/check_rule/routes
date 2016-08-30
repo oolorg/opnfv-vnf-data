@@ -2,6 +2,7 @@
 	"command": "show ip bgp neighbors {{ neighbor_ip }} routes | no-more",
 	"rules":[
 		{
+                        "description": "Check route table",
 			"regexp": "Total number of prefixes (\\d*)",
 			"result": "10"
 		}
