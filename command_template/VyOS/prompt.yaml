@@ -1,0 +1,2 @@
+terminal_mode: "@vyos:~$ "
+config_mode: "@vyos# "

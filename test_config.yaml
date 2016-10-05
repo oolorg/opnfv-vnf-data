@@ -1,7 +1,15 @@
-test: BGP
+vnf:
+    - target_vnf:
+        image_name: vyos1.1.7
+        os_type: vyos
+    - reference_vnf
+        image_name: vyos1.1.7
+        os_type: vyos
+test_protocol_kind: BGP
+target_vnf_name: target_vnf
 BGP:
-  - summary
-  - neighbor
-  - advertised-routes
-  - received-routes
-  - routes
+    - summary
+    - neighbor
+    - advertised-routes
+    - received-routes
+    - routes
