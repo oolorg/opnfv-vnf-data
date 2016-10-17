@@ -1,5 +1,5 @@
 {
-	"command": "show ip bgp neighbors {{ neighbor_ip }} | no-more",
+	"command": "show ip bgp neighbors {{ destination_ip }} | no-more",
 	"rules":[
 		{
                         "description": "Check bgp status",

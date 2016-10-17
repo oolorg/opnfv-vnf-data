@@ -1,11 +1,11 @@
 vyos:
-    prompt: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/prompt.yaml
+    prompt: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/prompt.yaml
     BGP:
-        summary: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
-        neighbor: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor
-        advertised-routes: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/advertised-routes
-        received-routes: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/received-routes
-        routes: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/routes
-        pre_command: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/bgp
-        parameter_target: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/parameter_target.yaml
-        parameter_reference: /home/opnfv/functest/data/vnf/opnfv-vnf-data/command_template/VyOS/bgp/parameter_reference.yaml
+        summary: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
+        neighbor: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor
+        advertised-routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/advertised-routes
+        received-routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/received-routes
+        routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/routes
+        pre_command: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/bgp
+        parameter_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_target.yaml
+        parameter_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_reference.yaml

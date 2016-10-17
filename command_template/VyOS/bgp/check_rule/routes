@@ -1,5 +1,5 @@
 {
-	"command": "show ip bgp neighbors {{ neighbor_ip }} routes | no-more",
+	"command": "show ip bgp neighbors {{ destination_ip }} routes | no-more",
 	"rules":[
 		{
                         "description": "Check route table",

@@ -10,11 +10,11 @@ set protocols static route {{have_addr8}} blackhole distance 1
 set protocols static route {{have_addr9}} blackhole distance 1
 set protocols static route {{have_addr10}} blackhole distance 1
 commit
-set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} ebgp-multihop '2'
-set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} remote-as {{ peer_as }}
-set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} update-source {{ipv4_origin}}
-set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} soft-reconfiguration inbound
-set protocols bgp {{ origin_as }} neighbor {{ ipv4_neighbor }} password lab0033
+set protocols bgp {{ origin_as }} neighbor {{ destination_ip }} ebgp-multihop '2'
+set protocols bgp {{ origin_as }} neighbor {{ destination_ip }} remote-as {{ peer_as }}
+set protocols bgp {{ origin_as }} neighbor {{ destination_ip }} update-source {{source_ip}}
+set protocols bgp {{ origin_as }} neighbor {{ destination_ip }} soft-reconfiguration inbound
+set protocols bgp {{ origin_as }} neighbor {{ destination_ip }} password lab0033
 set protocols bgp {{ origin_as }} network {{have_addr1}}
 set protocols bgp {{ origin_as }} network {{have_addr2}}
 set protocols bgp {{ origin_as }} network {{have_addr3}}
@@ -25,5 +25,5 @@ set protocols bgp {{ origin_as }} network {{have_addr7}}
 set protocols bgp {{ origin_as }} network {{have_addr8}}
 set protocols bgp {{ origin_as }} network {{have_addr9}}
 set protocols bgp {{ origin_as }} network {{have_addr10}}
-set protocols bgp {{ origin_as }} parameters router-id {{ipv4_origin}}
+set protocols bgp {{ origin_as }} parameters router-id {{source_ip}}
 commit

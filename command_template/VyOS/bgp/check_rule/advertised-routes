@@ -1,5 +1,5 @@
 {
-	"command": "show ip bgp neighbors {{ neighbor_ip }} advertised-routes | no-more",
+	"command": "show ip bgp neighbors {{ destination_ip }} advertised-routes | no-more",
 	"rules":[
 		{
                         "description": "Check route advertise",
