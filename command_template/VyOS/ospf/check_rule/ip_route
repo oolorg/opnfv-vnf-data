@@ -1,0 +1,10 @@
+{
+    "command": "show ip route {{neighbor_router_id}} | no-more",
+    "rules":[
+        {
+            "description": "Checking the routing entry",
+            "regexp": "Routing entry for (.*)/24",
+            "result": "200.200.200.0"
+        }
+    ]
+}

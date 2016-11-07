@@ -1,0 +1,10 @@
+{
+    "command": "show ip ospf database | no-more",
+    "rules":[
+        {
+            "description": "Checking the ospf status",
+            "regexp": "Router Link States \\((.*)\\)",
+            "result": "Area 0.0.0.0"
+        }
+    ]
+}
