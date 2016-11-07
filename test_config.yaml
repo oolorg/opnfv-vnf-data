@@ -1,8 +1,7 @@
-test_protocol_kind: BGP
+test_protocol_kind: OSPF
 target_vnf_name: target_vnf
-BGP:
-    - summary
+OSPF:
     - neighbor
-    - advertised-routes
-    - received-routes
-    - routes
+    - database
+    - ip_route
+    - show_ip_ospf_interface

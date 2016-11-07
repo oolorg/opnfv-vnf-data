@@ -1,0 +1,10 @@
+{
+    "command": "show ip ospf neighbor {{neighbor_router_id}} | no-more",
+    "rules":[
+        {
+            "description": "Checking the ospf neighbor",
+            "regexp": "Neighbor (\\d*.\\d*.\\d*.\\d*),",
+            "result": "{{neighbor_router_id}}"
+        }
+    ]
+}

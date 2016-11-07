@@ -1,0 +1,23 @@
+configure
+set interfaces loopback lo address {{router_id}}/24
+set interfaces loopback lo address 2001:a452:95e2:d000:d2a6:37ff:feee:e3d9/64
+set interfaces loopback lo ip ospf cost 1
+set interfaces loopback lo ipv6 ospfv3 cost 1
+set interfaces ethernet eth0 ip ospf authentication md5 key-id 1 md5-key 'lab0033'
+set interfaces ethernet eth0 ip ospf cost '10'
+set interfaces ethernet eth0 ip ospf network 'point-to-point'
+set interfaces ethernet eth0 ipv6 dup-addr-detect-transmits '1'
+set interfaces ethernet eth0 ipv6 ospfv3 cost '10'
+set protocols ospf area 0 authentication md5
+set protocols ospf area 0 network 12.0.0.0/24
+set protocols ospf area 0 network 200.200.200.0/24
+set protocols ospf default-information originate always
+set protocols ospf default-information originate metric 10
+set protocols ospf default-information originate metric-type 2
+set protocols ospf log-adjacency-changes
+set protocols ospf neighbor {{neighbor_router_id}}
+set protocols ospf parameters router-id {{router_id}}
+set protocols ospfv3 area 0.0.0.0 interface eth0
+set protocols ospfv3 area 0.0.0.0 interface lo
+set protocols ospfv3 parameters router-id {{router_id}}
+commit

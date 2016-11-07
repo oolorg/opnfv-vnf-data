@@ -1,0 +1,10 @@
+{
+    "command": "show ip ospf interface eth0 | no-more",
+    "rules":[
+        {
+            "description": "Checking the ospf interface",
+            "regexp": "eth0 is (.*)\\r\\n",
+            "result": "up"
+        }
+    ]
+}
