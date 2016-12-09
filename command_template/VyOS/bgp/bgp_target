@@ -1,4 +1,6 @@
 configure
+sudo /sbin/ifconfig eth0 mtu 1450
+sudo /sbin/ifconfig eth1 mtu 1450
 set protocols static route {{have_addr1}} blackhole distance 1
 set protocols static route {{have_addr2}} blackhole distance 1
 set protocols static route {{have_addr3}} blackhole distance 1

@@ -1,8 +1,38 @@
-test_protocol_kind: BGP
-target_vnf_name: target_vnf
-BGP:
-    - summary
-    - neighbor
-    - advertised-routes
-    - received-routes
-    - routes
+test_config_list:
+    -
+        topology_type: 'function_test'
+        function_test_list:
+            -
+                test_protocol_kind: 'BGP'
+                target_vnf_name: 'target_vnf'
+                BGP:
+                    - 'summary'
+                    - 'neighbor'
+                    - 'advertised-routes'
+                    - 'received-routes'
+                    - 'routes'
+            -
+                test_protocol_kind: 'OSPF'
+                target_vnf_name: 'target_vnf'
+                OSPF:
+                    - 'neighbor'
+                    - 'database'
+                    - 'ip_route'
+                    - 'show_ip_ospf_interface'
+    -
+        topology_type: 'performance_test'
+        vm:
+            target_vnf:
+                os_type: 'vyos'
+                image_name: 'vyos1.1.7'
+                flavor_name: 'm1.medium'
+            tester_vm:
+                os_type: 'tester'
+                image_name: 'tester'
+                flavor_name: 'm1.medium'
+        input_parameter:
+            packet_size: 1470
+            bandwidth: 1000
+            udp_port: 10000
+            time: 10
+            count: 2

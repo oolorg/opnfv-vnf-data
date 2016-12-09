@@ -1,0 +1,1 @@
+iperf -c {{dst_ip}} -u -l {{packet_size}} -b {{bandwidth}}M -p {{port}} -t {{time}}

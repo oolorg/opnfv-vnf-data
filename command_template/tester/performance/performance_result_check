@@ -1,0 +1,2 @@
+kill -9 $IPERF_PID
+cat output.log

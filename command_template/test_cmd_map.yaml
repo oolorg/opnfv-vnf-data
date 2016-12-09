@@ -19,3 +19,15 @@ vyos:
         pre_command_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/bgp_refelence
         parameter_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_target.yaml
         parameter_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_reference.yaml
+tester:
+    prompt: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/prompt.yaml
+    performance:
+        sudo: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/check_rule/sudo
+        receive_check_iperf_stop: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/check_rule/receive_check_iperf_stop
+        receive_check_iperf_result: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/check_rule/receive_check_iperf_result
+        performance_result_check: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_result_check
+        performance_pre_command: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_pre_command
+        performance_send: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_send
+        performance_receive: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_receive
+        parameter_send_tester: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/parameter_send.yaml
+        parameter_receive_tester: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/parameter_receive.yaml

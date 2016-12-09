@@ -1,0 +1,4 @@
+{
+	"command": "kill -9 $IPERF_PID",
+	"rules":[]
+}

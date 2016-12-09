@@ -1,0 +1,22 @@
+general:
+    images:
+        tester_vm_os:
+            os_type: 'tester'
+            image_url: 'https://drive.google.com/open?id=0Bzw6mxxJof22ckRoYzZqRU1Fdnc'
+            image_name: 'tester'
+            user: 'ubuntu'
+            key_path: '/home/opnfv/.ssh/cloudify-agent-kp.pem'
+test_topology:
+    performance_test_topology:
+        topology_type: 'performance_test'
+        blueprint:
+            file_name: 'performance-test-openstack-blueprint.yaml'
+            destination_folder: 'opnfv-vnf-vyos-blueprint'
+            url: https://github.com/oolorg/opnfv-vnf-vyos-blueprint.git
+            branch: 'master'
+            blueprint_name: 'performance_test_bp'
+            deployment_name: 'performance_test_vyos'
+        requierments:
+            ram_min: 4000
+        inputs:
+            external_network_name: ''

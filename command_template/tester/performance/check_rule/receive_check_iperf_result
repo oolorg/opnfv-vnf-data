@@ -1,0 +1,4 @@
+{
+	"command": "cat output.log",
+	"rules":[]
+}

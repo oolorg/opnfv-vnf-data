@@ -1,0 +1,5 @@
+sudo su
+export D_PLANE_NIC_NAME=`ifconfig | grep '{{macaddress}}' | awk '{print $1}'`
+env | grep D_PLANE_NIC_NAME
+route add -net {{network_cidr}} gw {{gw_ip}} netmask 255.255.255.0 dev $D_PLANE_NIC_NAME
+route -n
