@@ -1,0 +1,51 @@
+general:
+    images:
+        vyos:
+            os_type: 'vyos'
+            image_url: 'https://sourceforge.net/projects/ool-opnfv/files/vyos-1.1.7.img'
+            image_name: 'vyos1.1.7'
+            user: 'vyos'
+            pass: 'vyos'
+        tester_vm_os:
+            os_type: 'tester'
+            image_url: 'https://drive.google.com/open?id=0Bzw6mxxJof22ckRoYzZqRU1Fdnc'
+            image_name: 'tester'
+            user: 'ubuntu'
+            key_path: '/home/opnfv/.ssh/cloudify-agent-kp.pem'
+    reboot_wait: 30
+    protocol_stable_wait: 60
+    command_wait: 1
+    ssh_connect_timeout: 15
+    ssh_connect_retry_count: 20
+    ssh_receive_buffer: 10240
+
+test_topology:
+    function_test_topology:
+        topology_type: 'function_test'
+        blueprint:
+            file_name: 'openstack-blueprint.yaml'
+            destination_folder: "opnfv-vnf-vyos-blueprint"
+            url: https://github.com/oolorg/opnfv-vnf-vyos-blueprint.git
+            branch: "master"
+            blueprint_name: "vnftest_bp"
+            deployment_name: "vnftest_vyos"
+        default:
+            ram_min: 4000
+            os_image: vyos1.1.7
+        inputs:
+            external_network_name: ''
+
+    performance_test_topology:
+        topology_type: 'performance_test'
+        blueprint:
+            file_name: 'performance-test-openstack-blueprint.yaml'
+            destination_folder: 'opnfv-vnf-vyos-blueprint'
+            url: https://github.com/oolorg/opnfv-vnf-vyos-blueprint.git
+            branch: 'master'
+            blueprint_name: 'performance_test_bp'
+            deployment_name: 'performance_test_vyos'
+        default:
+            ram_min: 4000
+            os_image: tester
+        inputs:
+            external_network_name: ''

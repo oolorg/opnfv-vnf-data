@@ -1,20 +1,20 @@
 vyos:
     prompt: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/prompt.yaml
     OSPF:
-        neighbor: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/neighbor
-        database: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/database
-        ip_route: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/ip_route
-        show_ip_ospf_interface: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/show_ip_ospf_interface
+        Checking_the_neighbor_of_OSPF: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/neighbor
+        Checking_the_status_of_OSPF: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/database
+        Checking_the_routing_entry: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/ip_route
+        Checking_the_interface_of_OSPF: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/show_ip_ospf_interface
         pre_command_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/ospf_target
         pre_command_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/ospf_reference
         parameter_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/parameter_target.yaml
         parameter_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/parameter_reference.yaml
     BGP:
-        summary: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
-        neighbor: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor
-        advertised-routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/advertised-routes
-        received-routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/received-routes
-        routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/routes
+        Checking_the_peer_of_BGP: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
+        Checking_the_status_of_BGP: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor
+        Checking_the_advertised_routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/advertised-routes
+        Checking_the_received_routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/received-routes
+        Checking_the_routing_table: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/routes
         pre_command_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/bgp_target
         pre_command_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/bgp_refelence
         parameter_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_target.yaml
