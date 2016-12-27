@@ -32,8 +32,6 @@ test_topology:
         default:
             ram_min: 4000
             os_image: vyos1.1.7
-        inputs:
-            external_network_name: ''
 
     performance_test_topology:
         topology_type: 'performance_test'
@@ -46,6 +44,5 @@ test_topology:
             deployment_name: 'performance_test_vyos'
         default:
             ram_min: 4000
-            os_image: tester
-        inputs:
-            external_network_name: ''
+            vnf_os_image: vyos1.1.7
+            tester_os_image: tester
