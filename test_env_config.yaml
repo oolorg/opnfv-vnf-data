@@ -23,7 +23,7 @@ test_topology:
     function_test_topology:
         topology_type: 'function_test'
         blueprint:
-            file_name: 'openstack-blueprint.yaml'
+            file_name: 'function-test-openstack-blueprint.yaml'
             destination_folder: "opnfv-vnf-vyos-blueprint"
             url: https://github.com/oolorg/opnfv-vnf-vyos-blueprint.git
             branch: "master"
