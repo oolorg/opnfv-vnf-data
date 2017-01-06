@@ -8,7 +8,7 @@ general:
             pass: 'vyos'
         tester_vm_os:
             os_type: 'tester'
-            image_url: 'https://drive.google.com/open?id=0Bzw6mxxJof22ckRoYzZqRU1Fdnc'
+            image_url: 'https://sourceforge.net/projects/ool-opnfv/files/tester.img'
             image_name: 'tester'
             user: 'ubuntu'
             key_path: '/home/opnfv/.ssh/cloudify-agent-kp.pem'
@@ -47,3 +47,9 @@ test_topology:
             ram_min: 4000
             vnf_os_image: vyos1.1.7
             tester_os_image: tester
+            input_parameter:
+                packet_size: 1470
+                bandwidth: 1000
+                udp_port: 10000
+                duration: 10
+                count: 2

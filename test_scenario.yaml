@@ -33,26 +33,6 @@ test_scenario_list:
                             - 'Checking_the_status_of_OSPF'
                             - 'Checking_the_routing_entry'
                             - 'Checking_the_interface_of_OSPF'
-            -
-                target_vnf_name: 'reference_vnf'
-                test_list:
-                    -
-                        test_kind: 'Interoperability'
-                        protocol: 'BGP'
-                        BGP:
-                            - 'Checking_the_peer_of_BGP'
-                            - 'Checking_the_status_of_BGP'
-                            - 'Checking_the_advertised_routes'
-                            - 'Checking_the_received_routes'
-                            - 'Checking_the_routing_table'
-                    -
-                        test_kind: 'Interoperability'
-                        protocol: 'OSPF'
-                        OSPF:
-                            - 'Checking_the_neighbor_of_OSPF'
-                            - 'Checking_the_status_of_OSPF'
-                            - 'Checking_the_routing_entry'
-                            - 'Checking_the_interface_of_OSPF'
     -
         test_type: 'performance_test'
         vnf_list:
