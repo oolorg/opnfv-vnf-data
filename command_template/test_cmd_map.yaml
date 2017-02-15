@@ -1,31 +1,31 @@
 vyos:
-    prompt: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/prompt.yaml
+    prompt: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/prompt.yaml
     OSPF:
-        Checking_the_neighbor_of_OSPF: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/neighbor
-        Checking_the_status_of_OSPF: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/database
-        Checking_the_routing_entry: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/ip_route
-        Checking_the_interface_of_OSPF: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/show_ip_ospf_interface
-        pre_command_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/ospf_target
-        pre_command_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/ospf_reference
-        parameter_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/parameter_target.yaml
-        parameter_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/ospf/parameter_reference.yaml
+        Checking_the_neighbor_of_OSPF: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/neighbor
+        Checking_the_status_of_OSPF: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/database
+        Checking_the_routing_entry: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/ip_route
+        Checking_the_interface_of_OSPF: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/check_rule/show_ip_ospf_interface
+        pre_command_target: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/ospf_target
+        pre_command_reference: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/ospf_reference
+        parameter_target: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/parameter_target.yaml
+        parameter_reference: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/ospf/parameter_reference.yaml
     BGP:
-        Checking_the_peer_of_BGP: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
-        Checking_the_status_of_BGP: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor
-        Checking_the_advertised_routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/advertised-routes
-        Checking_the_received_routes: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/received-routes
-        Checking_the_routing_table: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/routes
-        pre_command_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/bgp_target
-        pre_command_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/bgp_refelence
-        parameter_target: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_target.yaml
-        parameter_reference: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/VyOS/bgp/parameter_reference.yaml
+        Checking_the_peer_of_BGP: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/summary
+        Checking_the_status_of_BGP: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/neighbor
+        Checking_the_advertised_routes: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/advertised-routes
+        Checking_the_received_routes: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/received-routes
+        Checking_the_routing_table: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/check_rule/routes
+        pre_command_target: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/bgp_target
+        pre_command_reference: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/bgp_refelence
+        parameter_target: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/parameter_target.yaml
+        parameter_reference: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/VyOS/bgp/parameter_reference.yaml
 tester:
-    prompt: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/prompt.yaml
+    prompt: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/prompt.yaml
     performance:
-        sudo: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/check_rule/sudo
-        receive_check_iperf_stop: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/check_rule/receive_check_iperf_stop
-        receive_check_iperf_result: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/check_rule/receive_check_iperf_result
-        performance_result_check: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_result_check
-        performance_pre_command: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_pre_command
-        performance_send: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_send
-        performance_receive: /home/opnfv/functest/data/vRouter/opnfv-vnf-data/command_template/tester/performance/performance_receive
+        sudo: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/check_rule/sudo
+        receive_check_iperf_stop: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/check_rule/receive_check_iperf_stop
+        receive_check_iperf_result: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/check_rule/receive_check_iperf_result
+        performance_result_check: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/performance_result_check
+        performance_pre_command: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/performance_pre_command
+        performance_send: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/performance_send
+        performance_receive: /home/opnfv/repos/vnfs/vrouter/data/opnfv-vnf-data/command_template/tester/performance/performance_receive
