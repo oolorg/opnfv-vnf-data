@@ -12,12 +12,12 @@ general:
             image_name: 'tester'
             user: 'ubuntu'
             key_path: '/home/opnfv/.ssh/cloudify-agent-kp.pem'
-    reboot_wait: 30
+    reboot_wait: 60
     protocol_stable_wait: 60
     topology_stable_wait: 120
-    command_wait: 1
-    ssh_connect_timeout: 15
-    ssh_connect_retry_count: 20
+    command_wait: 5
+    ssh_connect_timeout: 30
+    ssh_connect_retry_count: 40
     ssh_receive_buffer: 10240
 
 test_topology:
