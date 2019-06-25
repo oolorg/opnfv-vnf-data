@@ -1,6 +1,4 @@
 configure
-sudo /sbin/ifconfig eth0 mtu 1450
-sudo /sbin/ifconfig eth1 mtu 1450
 export D_PLANE_NIC_NAME=`/sbin/ifconfig | grep '{{macaddress}}' | awk '{print $1}'`
 env | grep D_PLANE_NIC_NAME
 set interfaces loopback lo address {{router_id}}/24
